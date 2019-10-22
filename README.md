@@ -5,11 +5,11 @@ The code for paper Low-Resource Sequence Labeling via Unsupervised Multilingual 
 
 
 ### deps
-``
-python3
+```
+python3 
 tensorflow-gpu==1.8.0
 tensorflow_hub==0.1.1
-``
+```
 
 ### Uasge
 
@@ -22,20 +22,20 @@ The project contains two parts of codes, this dir ./ for MLMA language model, an
 2. build vocab, run ``python data/build-vocab.py vocab_num < train_file > vocab_file`` for each corpus, for example, ``python data/build_vocab.py 200000 < data/en/en_1B_train.seg > data/en/vocab.txt`` and ``python data/build-vocab.py 200000 < data/es/eswiki_train.seg > data/es/vocab.txt``
 
 3. change the data path in the config file
-`` 
+```
 params["train_src"] is the path to train corpus
 params["dev_src"] if you want to evaluate dev loss during the training
 params["vocab_src"] is the path to the vocab file generated in Step 2
 params["src_vocab_size"] is the vocab_num used in Step 2
 params['init_emb'] if init from MUSE, give the path to muse embedding
-``
+```
 we provide 4 template config files
-``
+```
 config_emb_iden_enes.py for identical strings.
 config_layer_mv_enes.py for alignment with mean and variance.
 config_layer_avl_enes.py for alignment with average linkage.
 config_winit_layer_avl_enes.py for average linkage + MUSE init.
-``
+```
 
 4. run training, run ``nohup sh train.sh device config > log &``, for example, ``nohup sh train.sh 0,1,2,3 config_layer_avl_enes.py > log/log.layer_avl_enes &``. The training is time-consuming, it takes about 3 days using 4 V100. The average linkage requires large GPU memory of 16GB (when getting the OOM problem, you can reduce the vocab size or batch size to reduce the requirement for GPU memory)
 
