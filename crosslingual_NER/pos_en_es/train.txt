@@ -1,0 +1,33 @@
+Pierre	NOUN
+Vinken	NOUN
+,	.
+61	NUM
+years	NOUN
+old	ADJ
+,	.
+will	VERB
+join	VERB
+the	DET
+board	NOUN
+as	ADP
+a	DET
+nonexecutive	ADJ
+director	NOUN
+Nov.	NOUN
+29	NUM
+.	.
+
+Mr.	NOUN
+Vinken	NOUN
+is	VERB
+chairman	NOUN
+of	ADP
+Elsevier	NOUN
+N.V.	NOUN
+,	.
+the	DET
+Dutch	NOUN
+publishing	VERB
+group	NOUN
+.	.
+

@@ -1,0 +1,25 @@
+Las	DET
+reservas	NOUN
+de	ADP
+oro	NOUN
+y	CONJ
+divisas	NOUN
+de	ADP
+Rusia	NOUN
+subieron	VERB
+800_millones_de_dólares	NUM
+y	CONJ
+el	DET
+26_de_mayo	NOUN
+equivalían	VERB
+a	ADP
+19.100_millones_de_dólares	NUM
+,	.
+informó	VERB
+hoy	ADV
+un	DET
+comunicado	NOUN
+del	ADP
+Banco_Central	NOUN
+.	.
+
