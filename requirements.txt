@@ -1,2 +1,2 @@
-tensorflow-gpu==1.8.0
+tensorflow-gpu==2.5.1
 tensorflow_hub==0.1.1
